@@ -1,1 +1,128 @@
 /* estilos.css */
+
+:root{
+	--negro: #29272a;
+	--naranja: #f69c21;
+	--blanco: #FFF;
+	--negroVerdadero: #000;
+	--naranjaboton: #fd751d;
+	--amarillo: yellow;	
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+	margin-top:16px;
+	margin-bottom:24px;
+	font-family: Arial, sans-serif;
+	/* Aplico la fuente general en la etiqueta body para aprovechas la herencia */
+}
+.cabecera{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top:16px;
+	margin-bottom:24px;
+	
+}
+
+h1{
+	color: var(--naranja);
+}
+
+.contenedor{
+	background-color: var(--blanco);
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/*
+--------------------------------
+			SECCION BOTONERA con float
+--------------------------------
+*/
+.botonera{
+	background-color: var(--naranjaboton);
+	max-width: 1000px;
+	display: flex;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:32px;
+}
+
+.botonera li{
+	list-style-type: none;
+	flex-grow: 1;
+
+}
+
+.botonera-lista{
+	background-color: var(--naranjaboton);
+	display: flex;
+	text-align: center;
+	overflow:auto;
+}
+
+.botonera a{
+	float:left;
+	display:block;
+	padding:5px 20px;
+	border-right: 1px solid var(--amarillo);
+}
+
+/*  SECCION BOTONERA con flexbox
+
+.botonera{
+	background-color: var(--naranjaboton);
+	padding-left:15px;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.botonera li{
+	flex-grow: 1;
+
+}
+
+.botonera-lista{
+	background-color: var(--naranjaboton);
+	display: flex;
+}
+
+.botonera a{
+	background-color: var(--naranjaboton);
+	display: block;
+	border.right:1px; solid var(--amarillo);
+	text-align:center;
+	padding;6px 0;
+	
+}
+SE CREA LA CLASE EN FORMULARIO HTML SIN-BORDE
+la misma clase seguida suma importancia
+.sin-borde.sin-borde{
+	border-right:none;
+	
+	
+a.sin-borde{
+	border-right:none;
+}
+.clase etiqueta (significa que etiqueta está dentro de clase)
+
+etiqueta.clase (significa que etiqueta tiene aplicada clase)
+
+
+*/
+
+
