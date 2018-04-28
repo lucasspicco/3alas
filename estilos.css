@@ -22,6 +22,12 @@ body{
 	font-family: Arial, sans-serif;
 	/* Aplico la fuente general en la etiqueta body para aprovechas la herencia */
 }
+h2{
+	font-size:20px;
+	margin-bottom:16px;
+
+}
+
 .cabecera{
 	display:flex;
 	justify-content: space-between;
@@ -45,6 +51,7 @@ h1{
 	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
+	border-radius:10px 10px 0 0;
 }
 
 
@@ -58,14 +65,19 @@ h1{
 	max-width: 1000px;
 	display: flex;
 	padding-top:8px;
-	padding-bottom:8px;
+	padding-bottom:10px;
 	padding-left:32px;
+	border-radius:10px 10px 0 0;
+	font-weight: bold;
 }
 
 .botonera li{
 	list-style-type: none;
-	flex-grow: 1;
+	display:flex;
+}
 
+.botonera-lista li{
+	flex-grow: 1;
 }
 
 .botonera-lista{
@@ -76,12 +88,21 @@ h1{
 }
 
 .botonera a{
-	float:left;
 	display:block;
 	padding:5px 20px;
-	border-right: 1px solid var(--amarillo);
+	border-right: 1px solid white;
+	text-align: center;
+	text-decoration: none;	
+	color: white;
 }
 
+.botonera-lista_formulario{
+	margin-left:90px;
+	padding-top: 3px;
+}
+.botonera-lista_formulario input{
+	padding:2px 4px;
+}
 /*  SECCION BOTONERA con flexbox
 
 .botonera{
@@ -124,5 +145,174 @@ etiqueta.clase (significa que etiqueta tiene aplicada clase)
 
 
 */
+/* -----------------------------
+		SECCIÓN SLIDER
+--------------------------------
+*/
+
+.slider{
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+/* -----------------------------
+		SECCIÓN CATEGORÍAS
+--------------------------------
+*/
+.categoria{
+	width: 20%;
+	float:left;
+	background-color: white;
+	margin-top:50px;
+	padding-left:20px;
+}
+.lista-productos li{
+		border-bottom: 1px dashed lightgrey;
+}
+.lista-productos{
+	list-style-type: none;
+	background-color: white;
+	padding-left: 30px;
+	margin-bottom: 25px;
+}
+.lista-productos a{
+	display:block;
+	background-color: white;
+	padding:6px 0;
+	text-decoration: none;
+	color:black;
+	font-size: 13px;
+}
+.lista-productos a:hover{
+	font-weight: bold;
+}
 
 
+/* -----------------------------
+		SECCIÓN PRODUCTOS
+--------------------------------
+*/
+
+.productos{
+	width: 80%;
+	float:right;
+	background-color: white;
+	margin-top:50px;
+	padding-right: 56px;
+}
+
+.productos-lampara{
+	background-color: white;
+	float:left;
+	max-width: 50%;
+
+	padding-left: 26px;
+	padding-bottom: 32px
+}
+
+.lampara-info{
+	display: flex;
+	align-items: flex-start;
+}
+.lampara-info a{
+	padding-right: 15px;
+}
+
+.lampara-info img{
+	padding-right: 15px;
+}
+/* -----------------------------
+		SECCIÓN NEWSLETTER
+--------------------------------
+*/
+
+.newsletter{
+	clear:both;
+	max-width: 940px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	border: 1px solid lightgrey;
+
+	padding:10px 24px;
+
+	background-image: linear-gradient(white, lightgray);
+
+	overflow: auto;
+
+	border-radius:5px;
+}
+
+.newsletter img{
+	margin-right:30px;
+	float: left;
+}
+.newsletter-info{
+	float: left;
+}
+.newsletter-info p{
+	margin-left: 30px;
+	margin-top:7px;
+}
+.newsletter form{
+	float:right;
+	margin-top:12px;
+}
+
+.newsletter-form [type="submit"]{
+	background: none;
+	border:none;
+
+	/* Agregamos el cursor de la manito que perdemos al sacarle el fondo al botón*/
+	cursor:pointer;
+
+	font-weight: bold;
+	padding: 5px 8px;	
+}
+
+/* -----------------------------
+		SECCIÓN PIE
+--------------------------------
+*/
+
+/* Propiedades heredables, las aplico en el elemento padre y los hijos las tienen también */
+
+.pie{
+	background-color: #f0f0f0;
+	padding: 6px 50px;
+	border-top: 1px solid black;
+	margin-top: 30px;
+	overflow:auto;
+	font-size:12px;
+}
+
+.pie-copy, .pie-china, .pie-argentina{
+	float:left;
+}
+
+.pie-copy h4{
+	font-weight: normal;
+}
+.pie-creditos{
+	clear:both;
+	text-align: right;
+}
+.pie-china{
+	padding-left:20px;
+	padding-right: 15px;
+	border-right: 1px solid gray;
+}
+.pie-argentina{
+	padding-left:20px;
+}
+
+.pie-creditos a{
+	/*
+		paso dos:
+ 		acá aplicamos la fuente google
+ 		copiando lo encuadrado en specify in css
+	*/
+	font-family: 'Gamja Flower', sans-serif;
+}
